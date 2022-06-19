@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.http-method {
+  color: white;
+  border-radius: 0.4rem;
+  background-color: #0074D9;
+  padding: 0.4rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.http-uri {
+  border-radius: 0.4rem;
+  background-color: lightgray;
+  padding: 0.4rem;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li div {
+  margin-top: 0.5rem;
+}
