@@ -1,14 +1,12 @@
-import { Express } from 'express'
+import { Express } from 'express';
 import { Book } from "../controllers/book.controller";
+import { RestRouter } from './rest.routes';
+
 
 const book = (app: Express) => {
-  app.get('/books', Book.index)
+  new RestRouter(app, 'books', Book, '__all__').build();
   app.get('/books/search', Book.search)
-  app.post('/books', Book.create)
-  app.get('/books/:id', Book.show)
-  app.put('/books/:id', Book.update)
-  app.delete('/books/:id', Book.delete)
 }
 
+export { book };
 
-export { book }
